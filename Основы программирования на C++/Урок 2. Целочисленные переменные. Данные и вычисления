@@ -71,3 +71,25 @@ int main() {
 Мы вынесли вс числа в переменую у нас получился вот такой столбик (строка с 45 по 51)
 
 запускаем програму она выводит
+
+Создадим новый проект
+
+#include <iostream>
+
+int main() {
+  int someVariable  = 54;                               вывел 54
+  std::cout << someVariable;
+}
+
+Можно выводить сразу нескольео переменых
+
+#include <iostream>
+
+int main() {
+  int someVariable  = 54;
+  std::cout << "Значкние someVariable: " << someVariable;
+}
+
+Запускаем програму и вот что видим
+
+Значкние someVariable: 54
