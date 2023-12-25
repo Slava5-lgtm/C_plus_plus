@@ -106,5 +106,5 @@ int main() {
 
   int total = baseRate *  square * residentsCount;
   
-  std::cout << "Стоимость отопления площяди " << square <<  square << " и количества жильцов " << residentsCount << " составит " << total << "денег";
+  std::cout << "Стоимость отопления площяди "  <<  square << " кв. м. и количества жильцов " << residentsCount << " составит " << total << "руб";
 }
