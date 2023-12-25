@@ -42,7 +42,7 @@ int main() {
 include <iostream>
 
 int main() {
-  int turnNumber = 9; - обявили переменую  turnNumber у нас 9 ход поэтому присваеваем значения 9
+  int turnNumber = 9;  - обявили переменую  turnNumber у нас 9 ход поэтому присваеваем значения 9
   int level = 3;
   int strength = 7;
   int leftHandItem = 1;
@@ -93,3 +93,18 @@ int main() {
 Запускаем програму и вот что видим
 
 Значкние someVariable: 54
+
+
+                                                      Арифметические операции
+
+#include <iostream>
+
+int main() {
+  int baseRate = 3;
+  int square = 65;
+  int residentsCount = 3;
+
+  int total = baseRate *  square * residentsCount;
+  
+  std::cout << "Стоимость отопления площяди " << square <<  square << " и количества жильцов " << residentsCount << " составит " << total << "денег";
+}
