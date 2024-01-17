@@ -391,4 +391,21 @@ a < b + c
 b < a + c
 c < b + a
 
+                                              ВОТ ТАК ВЫГЛИДИТ КОД
 
+#include <iostream>
+
+int main() {
+  int a;
+  int b;
+  int c;
+  std::cout << "Введите длины сторон треугольнтка:\n";
+  std::cin >> a >> b >> c;
+  // Мы проверяем что каждая сторона меньше суммы двух оставшихся
+  if (a < b + c && b < a + c && c < a + b) {
+    std::cout << "Да";
+
+  } else {
+    std::cout << "Нет";
+  }
+}
