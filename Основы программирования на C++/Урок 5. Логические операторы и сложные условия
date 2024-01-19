@@ -863,4 +863,101 @@ int main() {
 
     int total = 10
     std:: cout << total; //выводиться 10
-переменая total видна и ее можно вывести на экран строки 852, а  строке 
+
+переменая total видна и ее можно вывести на экран строки 852 и 853, а  строке 855 не видна и попытка вывести ее на экран выдаст ошибку. Та часть програмы в которой
+переменая видна  и называеться: ЕЕ ОБЛОСТЬЮ ВИДИМОСТИ.
+
+В предедушем примере облости видимости переменых пересикались и завадить такие переменые не рекамендуеться. В этом примере облости видимости переменых с названием totsl 
+не пересикаються, и в этом случае такие названия вполне допустимы и даже привествуються по скольку всегда стоит называть одинковые сушности одинаковыми именами. В 
+пределах одного блока не допускаеться объявлять переменую с тем е именем которое уже было в этом блоке даже если у нее будет другой тип. Да же если мы попытаемся в 
+строке 859 объявить переменую std::string total; то при запуске получим ошибку. Сообшения о том что мы пытаемся переопределить переменую tota заново в томжеблоке
+
+./main.cpp:7:17: error: redefinition of 'total' with a different type: 'std::string' (aka 'basic_string<char>') vs 'int'
+    std::string total;
+
+Запомните если мы определили однажды переменую в блокетона уже не может не тип не темболее свое имя, однако поменять значения такой переменой можно.
+
+НЕЛЬЗЯ НАЗЫВАТЬ ПЕРЕМЕНЫЕ КЛЮЧЕВЫМИ СЛОВАМИ С++
+
+
+alignas (C++11)
+alignof (C++11)
+and
+and_eq
+asm
+auto
+bitand
+bitor
+bool
+break
+case
+catch
+char
+char16_t (C++11)
+char32_t (C++11)
+class
+compl
+const
+constexpr (C++11)
+const_cast
+continue	decltype (C++11)
+default
+delete
+do
+double
+dynamic_cast
+else
+enum
+explicit
+export
+extern
+false
+float
+for
+friend
+goto
+if
+inline
+int
+long
+mutable	namespace
+new
+noexcept (C++11)
+not
+not_eq
+nullptr (C++11)
+operator
+or
+or_eq
+private
+protected
+public
+register
+reinterpret_cast
+return
+short
+signed
+sizeof
+static
+static_assert (C++11)
+static_cast	struct
+switch
+template
+this
+thread_local (C++11)
+throw
+true
+try
+typedef
+typeid
+typename
+union
+unsigned
+using
+virtual
+void
+volatile
+wchar_t
+while
+xor
+xor_eq
