@@ -1,0 +1,78 @@
+Урок 11.                                Функции в программировании
+
+                                            Определение функций
+
+                                                Код distance
+
+
+#include <iostream>
+
+float distance(float sec)
+{
+  return 9.81f * sec * sec / 2; 
+}
+
+int main()
+{
+  for (float t = 0.0f; t <= 5.0f; t += 0.5f)
+  {
+    std::cout << t << " " << distance(t) << std::endl;
+  }
+}
+
+                                                Код max
+
+ #include <iostream>
+
+int max_t(int a, int b)
+{
+  return a > b ? a : b; 
+}
+
+int max3_t(int a, int b, int c)
+{
+  return a > b ? (a > c ? a : c) : (b > c ? b : c);
+}
+
+int max(int a, int b)
+{
+  if (a > b)
+    return a;
+  else
+    return b;
+}
+
+int max3(int a, int b, int c) 
+{
+  return max(max(a, b), c); 
+}
+
+int main() 
+{
+  int a = 1;
+  int b = 2;
+  int c = 3;
+  
+  std::cout << max(a, b) << std::endl;
+  std::cout << max3(a, b, c) << std::endl;
+  
+  std::cout << max_t(a, b) << std::endl;
+  std::cout << max3_t(a, b, c) << std::endl;
+}
+
+
+                                                Код equal
+
+#include <iostream>
+
+int main()
+{
+	int a = 3;
+  int b = 3;
+  int c = 3;
+
+  if(a == b && b == c)
+  {
+    std::cout << "Equal!" << std::endl;
+  }
+}
