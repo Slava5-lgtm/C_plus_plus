@@ -1415,34 +1415,16 @@ int main() {
   std::cout << "Введите положительное число:\n";
   std::cin >> number;
 
-  int current = 1;
+  int current = 2;
 
-  while () {
+  while (current < number) {
+    if (number % current == 0) break;    
+    ++current;                             
+  }                                            
 
-    if (number % current == 0) count += 1;    
-
-    
-    current += 1;                             
-                                              
-
-    if (number % current == 0) count += 1;
-    current += 1;
-  }
-  /
-
-  if (count == 2) {
+  if (current == number)  {
     std::cout << "Это простое число";
-  } eles {
+  }   else {
     std::cout << "Это не простое число";
   }
 }
-
-}
-  if (count == 2) {
-    std::cout << "Это простое число";
-  } else {
-    std::cout << "Это не простое число";
-  }
-}
-
-
