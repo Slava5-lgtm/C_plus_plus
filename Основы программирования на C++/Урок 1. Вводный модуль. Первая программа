@@ -14,7 +14,7 @@ std::cout <<   - оператор ввывода
 
                                     Ошибки
 
-Если мы забудим поставить ; то будитошибка
+Если мы забудим поставить ; то будит ошибка
 
 #include <iostream>                 ./main.cpp:4:32: error: expected ';' after expression
                                       std::cout << "Hello World!\n"
