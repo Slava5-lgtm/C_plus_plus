@@ -111,7 +111,7 @@ Hello, Mikhail!
 
 int main() {
   std::string userName;
-  std::cout << "My name is: ";
+  std::cout << "Как тебя зовут? : ";
   std::cin >> userName;
   std::cout << "Hello, " << userName << "!\n";
 }
