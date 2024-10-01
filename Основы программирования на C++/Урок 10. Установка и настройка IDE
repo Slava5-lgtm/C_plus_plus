@@ -116,3 +116,5 @@ int main() {
 И полезную литературу по теме:
 ● Таненбаум Э. С., Бос Х. «Современные операционные системы». (https://habr.com/ru/companies/piter/articles/258275/)
 Немет Эви, Хейн Трент Р., Снайдер Гарт. «Unix и Linux. Руководство системного администратора» (https://www.labirint.ru/books/749458/)
+
+Делаю установку по адресу (https://code.visualstudio.com/docs) GCC в Windows
